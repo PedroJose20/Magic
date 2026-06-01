@@ -15,16 +15,17 @@ public class Main {
         int opcion;
 
         do {
-            System.out.println("**** MENU MAGIC ****");
-            System.out.println("1. Listar mazos");
-            System.out.println("2. Listar colores");
-            System.out.println("3. Listar mazos con faccion");
-            System.out.println("4. Introducir mazo nuevo");
-            System.out.println("5. Introducir color nuevo");
-            System.out.println("6. Asignar colores a un mazo");
-            System.out.println("7. Eliminar mazo");
-            System.out.println("8. Actualizar mazo");
-            System.out.println("0. Salir");
+            System.out.println("//========== MENU MAGIC ========||");
+            System.out.println("||1. Listar mazos               ||");
+            System.out.println("||2. Listar colores             ||");
+            System.out.println("||3. Listar mazos con faccion   ||");
+            System.out.println("||4. Introducir mazo nuevo      ||");
+            System.out.println("||5. Introducir color nuevo     ||");
+            System.out.println("||6. Asignar colores a un mazo  ||");
+            System.out.println("||7. Eliminar mazo              ||");
+            System.out.println("||8. Actualizar mazo            ||");
+            System.out.println("||0. Salir                      ||");
+            System.out.println("||==============================//");
             opcion = input.nextInt();
             input.nextLine();
 
