@@ -4,18 +4,33 @@ public class Colores {
     private int idcolor;
     private String nombre;
 
-    // Constructores
-    public Colores() {}
-
     public Colores(int idcolor, String nombre) {
         this.idcolor = idcolor;
         this.nombre = nombre;
     }
 
-    // Getters y Setters
-    public int getIdcolor() { return idcolor; }
-    public void setIdcolor(int idcolor) { this.idcolor = idcolor; }
+    public int getIdcolor() {
+        return idcolor;
+    }
 
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
+
+    public void setIdcolor(int idcolor) {
+        this.idcolor = idcolor;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%-10s %5d || %-9s %-15s%n",
+                "ID Color:", idcolor,
+                "Nombre:", nombre);
+    }
+
 }

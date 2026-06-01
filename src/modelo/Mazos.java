@@ -5,22 +5,47 @@ public class Mazos {
     private String nombre;
     private String formato;
 
-    // Constructores
-    public Mazos() {}
-
     public Mazos(int idmazos, String nombre, String formato) {
         this.idmazos = idmazos;
         this.nombre = nombre;
         this.formato = formato;
     }
 
-    // Getters y Setters
-    public int getIdmazos() { return idmazos; }
-    public void setIdmazos(int idmazos) { this.idmazos = idmazos; }
+    public Mazos(String nombre, String formato) {
+        this.nombre = nombre;
+        this.formato = formato;
+    }
 
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
+    public int getIdmazos() {
+        return idmazos;
+    }
 
-    public String getFormato() { return formato; }
-    public void setFormato(String formato) { this.formato = formato; }
+    public void setIdmazos(int idmazos) {
+        this.idmazos = idmazos;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getFormato() {
+        return formato;
+    }
+
+    public void setFormato(String formato) {
+        this.formato = formato;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%-10s %5d || %-9s %-15s || %-10s %-12s%n",
+                "ID Mazo:", idmazos,
+                "Nombre:", nombre,
+                "Formato:", formato);
+    }
+
 }
